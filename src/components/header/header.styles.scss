@@ -1,0 +1,323 @@
+// Intro Navigation Animations
+@keyframes navSlideUp {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@keyframes navSlideDown {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@keyframes navSlideRight {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+// Menu Structure
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(var(--menu-color-1), 1);
+  overflow: hidden;
+  z-index: 1;
+  align-items: center;
+  grid-column: 1 / -1;
+  top: 0;
+  position: fixed;
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, .3);
+  animation: navSlideDown 1s ease 0.2s both;
+
+  @media screen and (min-width: 961px) and (min-height: 721px)  {
+    position: sticky;
+    transform: translateX(-100%);
+    align-items: stretch;
+    bottom: auto;
+    grid-column: 1 / 2;
+    justify-content: flex-start;
+    flex-direction: column; 
+    height: 100vh;
+    box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, .3);
+    animation: navSlideRight 1s ease 0.2s both;
+  }
+
+  .logo {
+    display: none;
+    padding: 1.2rem;
+    width: 6.6rem;
+    //background-color: rgba(var(--menu-color-2), 0);
+    transition: background-color .2s ease;
+
+    @media screen and (min-width: 481px) {display: block;}
+    @media screen and (min-width: 481px) and (min-height: 241px) {padding: 1.35rem; width: 7.8rem;}
+    @media screen and (min-width: 721px) and (min-height: 481px) {padding: 1.6rem; width: 8.4rem;}
+    @media screen and (min-width: 961px) and (min-height: 721px)  {padding: 20%; width: auto; border-bottom: 1px solid rgba(var(--menu-border), 1);}
+
+    .logo-image {
+      width: 100%;
+      border-radius: 50%;
+      transform: scaleX(-1);
+      border: 4px solid rgba(var(--menu-color-2), 1);
+      transition: border .2s ease;
+      
+
+      @media screen and (min-width: 1921px) {border: 4.5px solid rgba(var(--menu-color-2), 1);}
+      @media screen and (min-width: 2161px) {border: 5px solid rgba(var(--menu-color-2), 1);}
+      @media screen and (min-width: 2401px) {border: 5.5px solid rgba(var(--menu-color-2), 1);}
+      @media screen and (min-width: 2641px) {border: 6px solid rgba(var(--menu-color-2), 1);}
+      @media screen and (min-width: 2881px) {border: 6.5px solid rgba(var(--menu-color-2), 1);}
+      @media screen and (min-width: 3121px) {border: 7px solid rgba(var(--menu-color-2), 1);}
+      @media screen and (min-width: 3361px) {border: 7.5px solid rgba(var(--menu-color-2), 1);}
+      @media screen and (min-width: 3601px) {border: 8px solid rgba(var(--menu-color-2), 1);}
+    }
+
+    &:hover {
+      background-color: rgba(var(--menu-color-2), 1);
+
+      .logo-image {
+        border: 4px solid rgba(var(--menu-color-1), 1);
+        
+      }
+    }
+  }
+
+  .menu {
+    display: flex;
+    width: 100%;
+
+    @media screen and (min-width: 481px) {width: auto;}
+    @media screen and (min-width: 961px) and (min-height: 721px)  {display: block;}
+
+    .navigation {
+      width: 100%;
+      justify-content: space-evenly;
+
+      @media screen and (min-width: 481px) {width: auto; justify-content: flex-start;}
+    }
+
+    .navigation, .tools {
+      display: flex;
+
+      @media screen and (min-width: 961px) and (min-height: 721px)  {flex-direction: column;}
+
+      a, button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        height: 6.6rem;
+        border-left: 1px solid rgba(var(--menu-border), 1);
+
+        &:first-child {border-left: 0px solid rgba(var(--menu-border), 1);}
+
+        @media screen and (min-width: 481px) {
+          width: 6.6rem; 
+          border-left: 1px solid rgba(var(--menu-border), 1);
+          &:first-child {border-left: 1px solid rgba(var(--menu-border), 1);}
+        }
+        @media screen and (min-width: 481px) and (min-height: 241px) {width: 7.8rem; height: 7.8rem; }
+        @media screen and (min-width: 721px) and (min-height: 481px) {width: 8.4rem; height: 8.4rem; }
+        @media screen and (min-width: 961px) and (min-height: 721px)  {
+          width: auto;
+          height: auto;
+          border-bottom: 1px solid rgba(var(--menu-border), 1);
+          border-left: 0px solid rgba(var(--menu-border), 1);
+          &:first-child {border-left: 0px solid rgba(var(--menu-border), 1);}
+          aspect-ratio: 1 / 1;
+        }
+          
+
+        &.color-toggle {
+          display: none;
+    
+          @media screen and (min-width: 546px)  {
+            display: flex;
+          }
+        }
+    
+        &.menu-toggle {
+          display: none;
+    
+          @media screen and (min-width: 481px)  {
+            display: flex;
+          }
+          @media screen and (min-width: 961px) and (min-height: 721px)  {
+            display: none;
+          }
+        }
+
+        svg {
+          transform: perspective(40rem) rotateY(0);
+          font-size: 2.7rem;
+          //@media screen and (min-width: 961px) and (min-height: 721px)  {width: 37%;}
+          @media screen and (min-width: 961px) and (min-height: 721px)  {width: 34%; height: auto;}
+          
+        }
+
+        span {
+          font-size: 0;
+        }
+
+        &:hover {
+
+          svg {
+            color: rgba(var(--menu-color-1), 1);
+            transform: perspective(40rem) rotateY(360deg);
+            transition: transform .5s ease-in-out;
+          }
+        }
+      }
+      
+      // Menu Colors
+      .home-link {
+        transition: background-color .2s ease-in-out;
+        
+        svg {
+          color: rgba(var(--menu-color-2), 1);
+        }
+
+        span {
+          color: rgba(var(--menu-color-2), 1);
+        }
+
+        &:hover {
+          background-color: rgba(var(--menu-color-2), 1);
+        }
+      }
+
+      .about-link {
+        transition: background-color .2s ease-in-out;
+        
+        svg {
+          color: rgba(var(--menu-color-2), 1);
+        }
+
+        span {
+          color: rgba(var(--menu-color-2), 1);
+        }
+
+        &:hover {
+          background-color: rgba(var(--menu-color-2), 1);
+        }
+      }
+
+      .projects-link {
+        transition: background-color .2s ease-in-out;
+        
+        svg {
+          color: rgba(var(--menu-color-2), 1);
+        }
+
+        span {
+          color: rgba(var(--menu-color-2), 1);
+        }
+
+        &:hover {
+          background-color: rgba(var(--menu-color-2), 1);
+        }
+      }
+
+      .contact-link {
+        transition: background-color .2s ease-in-out;
+        
+        svg {
+          color: rgba(var(--menu-color-2), 1);
+        }
+
+        span {
+          color: rgba(var(--menu-color-2), 1);
+        }
+
+        &:hover {
+          background-color: rgba(var(--menu-color-2), 1);
+        }
+      }
+
+      .dark-toggle {
+        transition: background-color .2s ease-in-out;
+        
+        svg {
+          color: rgba(var(--dark-mode-menu-color), 1);
+        }
+
+        span {
+          color: rgba(var(--dark-mode-menu-color), 1);
+        }
+
+        &:hover {
+          background-color: rgba(var(--dark-mode-menu-color), 1);
+        }
+      }
+
+      .light-toggle {
+        transition: background-color .2s ease-in-out;
+        
+        svg {
+          color: rgba(var(--light-mode-menu-color), 1);
+        }
+
+        span {
+          color: rgba(var(--light-mode-menu-color), 1);
+        }
+
+        &:hover {
+          background-color: rgba(var(--light-mode-menu-color), 1);
+        }
+      }
+
+      .menu-toggle {
+        transition: background-color .2s ease-in-out;
+        
+        svg {
+          color: rgba(var(--menu-color-2), 1);
+        }
+
+        span {
+          color: rgba(var(--menu-color-2), 1);
+        }
+
+        &:hover {
+          background-color: rgba(var(--menu-color-2), 1);
+        }
+      }
+    }
+  }
+
+  // Hide Logo Copy To Center Vertical Menu
+  .hide {
+    display:none;
+  
+    @media screen and (min-width: 961px) and (min-height: 721px)  {
+      visibility: hidden;
+      display: block;
+    }
+  }
+}
+
+// Conditionally Rendered CSS
+.bottomHeaderMenu { // Sticky Bottom Menu On Click In Smaller Widths
+  position: sticky;
+  bottom: 0;
+  animation: navSlideUp 1s ease 0.2s both;
+  box-shadow: 0px -2px 7px 0px rgba(0, 0, 0, .3);
+
+  @media screen and (min-width: 961px) and (min-height: 721px)  {
+    top: 0;
+    animation: navSlideRight 1s ease 0.2s both;
+  }
+}

@@ -1,0 +1,315 @@
+// Animation On Scroll Project Animations
+[data-aos="slide-right-custom"] {
+  transform: translateX(0%);
+  transition-property: transform;
+
+  @media screen and (min-width: 961px) {
+    transform: translateX(-100%);
+    transition-property: transform;
+  }
+  
+  &.aos-animate {
+    transform: translateX(0%);
+  }
+}
+
+[data-aos="slide-left-custom"] {
+  margin-left: auto;
+  transform: translateX(0%);
+  transition-property: transform;
+
+  @media screen and (min-width: 961px) {
+    transform: translateX(100%);
+    transition-property: transform;
+  }
+  
+  &.aos-animate {
+    transform: translateX(0%);
+  }
+}
+
+.projects {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+
+  .project {
+    position: relative;
+    overflow: hidden;
+
+    .background {
+      object-fit: cover;
+      object-position: top right;
+
+      @media screen and (min-width: 961px) {position: absolute; width: 100%; height: 100%;}
+    }
+    
+    .project-info {
+      position: relative;
+      z-index: 1;
+      backdrop-filter: blur(.2rem);
+      
+      padding: 6rem;
+      width: 100%;
+      background-color: rgba(var(--projects-color-1), 1);
+
+      @media screen and (min-width: 481px) {padding: 6.7rem; width: 100%;}
+      @media screen and (min-width: 721px) {padding: 7.3rem; width: 100%;}
+      @media screen and (min-width: 961px) {padding: 8rem; width: 50%; background-color: rgba(var(--projects-color-1), .9);; /*min-height: 100vh; if I want each project to fill 100% of space*/}
+      @media screen and (min-width: 1201px) {padding: 8.7rem;}
+      @media screen and (min-width: 1441px) {padding: 9.3rem;}
+      @media screen and (min-width: 1681px) {padding: 10rem;}
+      @media screen and (min-width: 1921px) {padding: 11.3rem;}
+      @media screen and (min-width: 2161px) {padding: 12.5rem;}
+      @media screen and (min-width: 2401px) {padding: 13.8rem;}
+      @media screen and (min-width: 2641px) {padding: 15rem;}
+      @media screen and (min-width: 2881px) {padding: 16.3rem;}
+      @media screen and (min-width: 3121px) {padding: 17.5rem;}
+      @media screen and (min-width: 3361px) {padding: 18.8rem;}
+      @media screen and (min-width: 3601px) {padding: 20rem;}
+
+      .title {
+        font-weight: 650;
+        color: rgba(var(--projects-color-3), 1);
+        filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, .6));
+
+        font-size: 4rem;
+
+        @media screen and (min-width: 481px) {font-size: 4.5rem;}
+        @media screen and (min-width: 721px) {font-size: 5rem;}
+        @media screen and (min-width: 961px) {font-size: 5.5rem;}
+        @media screen and (min-width: 1201px) {font-size: 6rem;}
+        @media screen and (min-width: 1441px) {font-size: 6.5rem;}
+        @media screen and (min-width: 1681px) {font-size: 7rem;}
+        @media screen and (min-width: 1921px) {font-size: 7.9rem;}
+        @media screen and (min-width: 2161px) {font-size: 8.8rem;}
+        @media screen and (min-width: 2401px) {font-size: 9.6rem;}
+        @media screen and (min-width: 2641px) {font-size: 10.5rem;}
+        @media screen and (min-width: 2881px) {font-size: 11.4rem;}
+        @media screen and (min-width: 3121px) {font-size: 12.3rem;}
+        @media screen and (min-width: 3361px) {font-size: 13.1rem;}
+        @media screen and (min-width: 3601px) {font-size: 14rem;}
+
+        &::selection {
+          background-color: rgba(var(--projects-color-3), 1);
+          color:  rgba(var(--projects-color-1), 1);
+        }
+      }
+
+      .technologies {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin: 0.6rem 0 0 0;
+
+        @media screen and (min-width: 481px) {margin: 0.6rem 0 0 0;}
+        @media screen and (min-width: 721px) {margin: 0.7rem 0 0 0;}
+        @media screen and (min-width: 961px) {margin: 0.8rem 0 0 0;}
+        @media screen and (min-width: 1201px) {margin: 0.9rem 0 0 0;}
+        @media screen and (min-width: 1441px) {margin: 0.9rem 0 0 0;}
+        @media screen and (min-width: 1681px) {margin: 1rem 0 0 0;}
+        @media screen and (min-width: 1921px) {margin: 1.1rem 0 0 0;}
+        @media screen and (min-width: 2161px) {margin: 1.3rem 0 0 0;}
+        @media screen and (min-width: 2401px) {margin: 1.4rem 0 0 0;}
+        @media screen and (min-width: 2641px) {margin: 1.5rem 0 0 0;}
+        @media screen and (min-width: 2881px) {margin: 1.6rem 0 0 0;}
+        @media screen and (min-width: 3121px) {margin: 1.8rem 0 0 0;}
+        @media screen and (min-width: 3361px) {margin: 1.9rem 0 0 0;}
+        @media screen and (min-width: 3601px) {margin: 2rem 0 0 0;}
+
+        .box {
+          background-color: rgba(var(--projects-color-2), .15);
+
+          padding: 0.8rem;
+          margin: 0.6rem 0.6rem 0 0;
+          box-shadow: -.2rem .2rem rgba(var(--projects-color-2), .5);
+          
+          @media screen and (min-width: 481px) {padding: 0.87rem; margin: 0.6rem 0.6rem 0 0; box-shadow: -.2rem .2rem rgba(var(--projects-color-2), .5);}
+          @media screen and (min-width: 721px) {padding: 0.93rem; margin: 0.7rem 0.7rem 0 0; box-shadow: -.24rem .24rem rgba(var(--projects-color-2), .5);}
+          @media screen and (min-width: 961px) {padding: 1rem; margin: 0.8rem 0.8rem 0 0; box-shadow: -.28rem .28rem rgba(var(--projects-color-2), .5);}
+          @media screen and (min-width: 1201px) {padding: 1.1rem; margin: 0.9rem 0.9rem 0 0; box-shadow: -.32rem .32rem rgba(var(--projects-color-2), .5);}
+          @media screen and (min-width: 1441px) {padding: 1.13rem; margin: 0.9rem 0.9rem 0 0; box-shadow: -.36rem .36rem rgba(var(--projects-color-2), .5);}
+          @media screen and (min-width: 1681px) {padding: 1.2rem; margin: 1rem 1rem 0 0; box-shadow: -.4rem .4rem rgba(var(--projects-color-2), .5);}
+          @media screen and (min-width: 1921px) {padding: 1.35rem; margin: 1.1rem 1.1rem 0 0; box-shadow: -.45rem .45rem rgba(var(--projects-color-2), .5);}
+          @media screen and (min-width: 2161px) {padding: 1.5rem; margin: 1.3rem 1.3rem 0 0; box-shadow: -.5rem .5rem rgba(var(--projects-color-2), .5);}
+          @media screen and (min-width: 2401px) {padding: 1.65rem; margin: 1.4rem 1.4rem 0 0; box-shadow: -.55rem .55rem rgba(var(--projects-color-2), .5);}
+          @media screen and (min-width: 2641px) {padding: 1.8rem; margin: 1.5rem 1.5rem 0 0; box-shadow: -.6rem .6rem rgba(var(--projects-color-2), .5);}
+          @media screen and (min-width: 2881px) {padding: 1.95rem; margin: 1.6rem 1.6rem 0 0; box-shadow: -.65rem .65rem rgba(var(--projects-color-2), .5);}
+          @media screen and (min-width: 3121px) {padding: 2.1rem; margin: 1.8rem 1.8rem 0 0; box-shadow: -.7rem .7rem rgba(var(--projects-color-2), .5);}
+          @media screen and (min-width: 3361px) {padding: 2.25rem; margin: 1.9rem 1.9rem 0 0; box-shadow: -.75rem .75rem rgba(var(--projects-color-2), .5);}
+          @media screen and (min-width: 3601px) {padding: 2.4rem; margin: 2rem 2rem 0 0; box-shadow: -.8rem .8rem rgba(var(--projects-color-2), .5);}
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          span {
+            font-weight: 475;
+            color: rgba(var(--projects-color-2), 1);
+            
+            font-size: 1.4rem;
+            
+            @media screen and (min-width: 481px) {font-size: 1.47rem;}
+            @media screen and (min-width: 721px) {font-size: 1.53rem;}
+            @media screen and (min-width: 961px) {font-size: 1.6rem;}
+            @media screen and (min-width: 1201px) {font-size: 1.67rem;}
+            @media screen and (min-width: 1441px) {font-size: 1.73rem;}
+            @media screen and (min-width: 1681px) {font-size: 1.8rem;}
+            @media screen and (min-width: 1921px) {font-size: 2rem;}
+            @media screen and (min-width: 2161px) {font-size: 2.3rem;}
+            @media screen and (min-width: 2401px) {font-size: 2.5rem;}
+            @media screen and (min-width: 2641px) {font-size: 2.7rem;}
+            @media screen and (min-width: 2881px) {font-size: 2.9rem;}
+            @media screen and (min-width: 3121px) {font-size: 3.2rem;}
+            @media screen and (min-width: 3361px) {font-size: 3.4rem;}
+            @media screen and (min-width: 3601px) {font-size: 3.6rem;}
+
+            &::selection {
+              background-color: rgba(var(--projects-color-2), 1);
+              color:  rgba(var(--projects-color-1), 1);
+            }
+          }
+        }
+      }
+
+      .rest {
+        overflow-y: hidden;
+        &.open {
+          height: auto;
+        }
+        &.close {
+          height: 0;
+        }
+      }
+
+      p {
+
+      line-height: 1.7;
+      color: rgba(var(--projects-color-2), 1);
+      font-weight: 425;
+      text-shadow: 0px 0px #00000000; // safari gradient text bug fix
+
+      font-size: 1.6rem;
+      margin: 2.3rem 0 0 0;
+
+      @media screen and (min-width: 481px) {font-size: 1.7rem; margin: 2.6rem 0 0 0;}
+      @media screen and (min-width: 721px) {font-size: 1.8rem; margin: 2.9rem 0 0 0;}
+      @media screen and (min-width: 961px) {font-size: 1.8rem; margin: 3.1rem 0 0 0;}
+      @media screen and (min-width: 1201px) {font-size: 1.9rem; margin: 3.4rem 0 0 0;}
+      @media screen and (min-width: 1441px) {font-size: 2rem; margin: 3.7rem 0 0 0;}
+      @media screen and (min-width: 1681px) {font-size: 2.1rem; margin: 4rem 0 0 0;}
+      @media screen and (min-width: 1921px) {font-size: 2.4rem; margin: 4.5rem 0 0 0;}
+      @media screen and (min-width: 2161px) {font-size: 2.6rem; margin: 5rem 0 0 0;}
+      @media screen and (min-width: 2401px) {font-size: 2.9rem; margin: 5.5rem 0 0 0;}
+      @media screen and (min-width: 2641px) {font-size: 3.2rem; margin: 6rem 0 0 0;}
+      @media screen and (min-width: 2881px) {font-size: 3.4rem; margin: 6.5rem 0 0 0;}
+      @media screen and (min-width: 3121px) {font-size: 3.7rem; margin: 7rem 0 0 0;}
+      @media screen and (min-width: 3361px) {font-size: 3.9rem; margin: 7.5rem 0 0 0;}
+      @media screen and (min-width: 3601px) {font-size: 4.2rem; margin: 8rem 0 0 0;}
+
+        &::selection {
+          background-color: rgba(var(--projects-color-2), 1);
+          color:  rgba(var(--projects-color-1), 1);
+        }
+      }
+
+      .project-actions {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        margin: 1.7rem 0 0 0;
+
+        @media screen and (min-width: 481px) {margin: 1.9rem 0 0 0;}
+        @media screen and (min-width: 721px) {margin: 2.1rem 0 0 0;}
+        @media screen and (min-width: 961px) {margin: 2.4rem 0 0 0;}
+        @media screen and (min-width: 1201px) {margin: 2.6rem 0 0 0;}
+        @media screen and (min-width: 1441px) {margin: 2.8rem 0 0 0;}
+        @media screen and (min-width: 1681px) {margin: 3rem 0 0 0;}
+        @media screen and (min-width: 1921px) {margin: 3.4rem 0 0 0;}
+        @media screen and (min-width: 2161px) {margin: 3.8rem 0 0 0;}
+        @media screen and (min-width: 2401px) {margin: 4.1rem 0 0 0;}
+        @media screen and (min-width: 2641px) {margin: 4.5rem 0 0 0;}
+        @media screen and (min-width: 2881px) {margin: 4.9rem 0 0 0;}
+        @media screen and (min-width: 3121px) {margin: 5.3rem 0 0 0;}
+        @media screen and (min-width: 3361px) {margin: 5.6rem 0 0 0;}
+        @media screen and (min-width: 3601px) {margin: 6rem 0 0 0;}
+
+        .project-icons {
+          display: flex;
+          align-items: center;
+
+          .icon-link {
+            margin-right: 1.6rem;
+
+              @media screen and (min-width: 481px) {margin-right: 2.4rem;}
+              @media screen and (min-width: 721px) {margin-right: 2.4rem;}
+              @media screen and (min-width: 961px) {margin-right: 2.4rem;}
+              @media screen and (min-width: 1201px) {margin-right: 2.4rem;}
+              @media screen and (min-width: 1441px) {margin-right: 2.4rem;}
+              @media screen and (min-width: 1681px) {margin-right: 2.4rem}
+              @media screen and (min-width: 1921px) {margin-right: 2.7rem;}
+              @media screen and (min-width: 2161px) {margin-right: 3.0rem;}
+              @media screen and (min-width: 2401px) {margin-right: 3.3rem;}
+              @media screen and (min-width: 2641px) {margin-right: 3.6rem;}
+              @media screen and (min-width: 2881px) {margin-right: 3.9rem;}
+              @media screen and (min-width: 3121px) {margin-right: 4.2rem;}
+              @media screen and (min-width: 3361px) {margin-right: 4.5rem;}
+              @media screen and (min-width: 3601px) {margin-right: 4.8rem;}
+          }
+
+          .icon {
+            display: block;
+            filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, .3));
+            border: 1px solid rgba(var(--banner-color-2), 1);
+            border-radius: 50%;
+            padding: 1.2rem;
+            color: rgba(var(--banner-color-2), 1);
+            font-size: 2.4rem;
+            transition: all .2s ease;
+  
+          @media screen and (min-width: 481px) {border: 1px solid rgba(var(--banner-color-2), 1); padding: 1.2rem; font-size: 2.5rem;}
+          @media screen and (min-width: 721px) {border: 1px solid rgba(var(--banner-color-2), 1); padding: 1.2rem; font-size: 2.6rem;}
+          @media screen and (min-width: 961px) {border: 1px solid rgba(var(--banner-color-2), 1); padding: 1.2rem; font-size: 2.7rem;}
+          @media screen and (min-width: 1201px) {border: 2px solid rgba(var(--banner-color-2), 1); padding: 1.2rem; font-size: 2.8rem;}
+          @media screen and (min-width: 1441px) {border: 2px solid rgba(var(--banner-color-2), 1); padding: 1.2rem; font-size: 2.9rem;}
+          @media screen and (min-width: 1681px) {border: 3px solid rgba(var(--banner-color-2), 1); padding: 1.2rem;  font-size: 3rem;}
+          @media screen and (min-width: 1921px) {border: 3px solid rgba(var(--banner-color-2), 1); padding: 1.35rem; font-size: 3.375rem;}
+          @media screen and (min-width: 2161px) {border: 3px solid rgba(var(--banner-color-2), 1); padding: 1.5rem;  font-size: 3.75rem;}
+          @media screen and (min-width: 2401px) {border: 4px solid rgba(var(--banner-color-2), 1); padding: 1.65rem;  font-size: 4.125rem;}
+          @media screen and (min-width: 2641px) {border: 4px solid rgba(var(--banner-color-2), 1); padding: 1.8rem; font-size: 4.5rem;}
+          @media screen and (min-width: 2881px) {border: 4px solid rgba(var(--banner-color-2), 1); padding: 1.95rem; font-size: 4.875rem;}
+          @media screen and (min-width: 3121px) {border: 5px solid rgba(var(--banner-color-2), 1); padding: 2.1rem; font-size: 5.25rem;}
+          @media screen and (min-width: 3361px) {border: 5px solid rgba(var(--banner-color-2), 1); padding: 2.25rem;  font-size: 5.625rem;}
+          @media screen and (min-width: 3601px) {border: 6px solid rgba(var(--banner-color-2), 1); padding: 2.4rem;  font-size: 6rem;}
+
+          
+  
+            &:hover {
+              cursor: pointer;
+              background-color:rgba(var(--banner-color-2), 1);
+              color: rgba(var(--banner-color-1), 1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Conditionally Rendered CSS
+.projects-anchor {
+  position: absolute;
+  height: 0;
+  top: -6.6rem;
+
+  @media screen and (min-width: 481px) and (min-height: 241px) {top: -7.8rem;}
+  @media screen and (min-width: 721px) and (min-height: 481px) {top: -8.4rem}
+  @media screen and (min-width: 961px) and (min-height: 721px)  {top: 0;}
+}
+
+.projects-anchor-none {
+  position: absolute;
+  height: 0;
+  top: 0rem;
+}

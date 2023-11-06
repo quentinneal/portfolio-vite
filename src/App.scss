@@ -1,0 +1,213 @@
+@keyframes spin { // Loading Spinner
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg);}
+  }
+
+.spinner {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(var(--spinner-color-1), 1);
+  
+    .spinner-object {
+      animation: spin 1s linear infinite both;
+      border: .4rem solid;
+      border-color: rgba(var(--spinner-color-2), 1);
+      border-top-color: rgba(var(--spinner-color-3), 1);
+      border-bottom-color: rgba(var(--spinner-color-3), 1);
+      border-radius: 50%;
+      width: 12rem;
+      height: 12rem;
+  
+      @media screen and (min-width: 961px) {border: .6rem solid; border-color: rgba(var(--spinner-color-2), 1); border-top-color: rgba(var(--spinner-color-3), 1); border-bottom-color: rgba(var(--spinner-color-3), 1); width: 14rem; height: 14rem;}
+      @media screen and (min-width: 1921px) {border: .4vw solid; border-color: rgba(var(--spinner-color-2), 1); border-top-color: rgba(var(--spinner-color-3), 1); border-bottom-color: rgba(var(--spinner-color-3), 1); width: 8vw; height: 8vw;}
+    }
+  }
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
+}
+
+.App {
+    display: grid;
+    background-color: rgba(var(--menu-color-1), 1);
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+  
+    @media screen and (min-width: 961px) and (min-height: 721px)  {
+        //@media screen and (min-width: 961px) {grid-template-columns: 10.5rem 1fr;}
+        //@media screen and (min-width: 1201px) {grid-template-columns: 11rem 1fr;}
+        //@media screen and (min-width: 1441px) {grid-template-columns: 11.5rem 1fr;}
+        //@media screen and (min-width: 1681px) {grid-template-columns: 12rem 1fr;}
+        //@media screen and (min-width: 1921px) {grid-template-columns: 13.5rem 1fr;}
+        //@media screen and (min-width: 2161px) {grid-template-columns: 15rem 1fr;}
+        //@media screen and (min-width: 2401px) {grid-template-columns: 16.5rem 1fr;}
+        //@media screen and (min-width: 2641px) {grid-template-columns: 18rem 1fr;}
+        //@media screen and (min-width: 2881px) {grid-template-columns: 19.5rem 1fr;}
+        //@media screen and (min-width: 3121px) {grid-template-columns: 21rem 1fr;}
+        //@media screen and (min-width: 3361px) {grid-template-columns: 22.5rem 1fr;}
+        //@media screen and (min-width: 3601px) {grid-template-columns: 24rem 1fr;}
+
+        @media screen and (min-width: 961px) {grid-template-columns: 9rem 1fr}
+        @media screen and (min-width: 1681px) {grid-template-columns: 9rem 1fr;}
+        @media screen and (min-width: 1921px) {grid-template-columns: 10.125rem 1fr;}
+        @media screen and (min-width: 2161px) {grid-template-columns: 11.25rem 1fr;}
+        @media screen and (min-width: 2401px) {grid-template-columns: 12.375rem 1fr;}
+        @media screen and (min-width: 2641px) {grid-template-columns: 13.5rem 1fr;}
+        @media screen and (min-width: 2881px) {grid-template-columns: 14.625rem 1fr;}
+        @media screen and (min-width: 3121px) {grid-template-columns: 15.75rem 1fr;}
+        @media screen and (min-width: 3361px) {grid-template-columns: 16.875rem 1fr;}
+        @media screen and (min-width: 3601px) {grid-template-columns: 18rem 1fr;}
+    }
+}
+
+input, select, textarea, button {
+    font-family:inherit;
+    font-size: inherit;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+    font-weight: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.light-mode {
+
+    // Spinner
+
+    --spinner-color-1: 255, 255, 255;
+    --spinner-color-2: 237, 237, 237;
+    --spinner-color-3: 0, 96, 255;
+
+    // Header
+    --menu-color-1: 247, 247, 247;
+    --menu-color-2: 0, 96, 255;
+    --menu-border: 216, 216, 216;
+    --dark-mode-menu-color: 94, 94, 94;
+
+    // Banner
+    --banner-color-1: 0, 96, 255;
+    --banner-color-2: 255, 255, 255;
+    --banner-transparency: .65;
+
+    // About
+    --about-color-1: 255, 255, 255;
+    --about-color-2: 33, 33, 33;
+    --about-color-3: 102, 102, 102;
+    --about-color-4: 0, 96, 255;
+
+    // Projects
+    --projects-color-1: 0, 96, 255;
+    --projects-color-2: 255, 255, 255;
+    --projects-color-3: 255, 255, 255;
+
+    // Contact
+    --contact-color-1: 255, 255, 255;
+    --contact-color-2: 33, 33, 33;
+    --contact-color-3: 102, 102, 102;
+    --contact-color-4: 237, 237, 237;
+    --contact-color-5: 0, 96, 255;
+}
+
+.dark-mode {
+
+    // Spinner
+
+    --spinner-color-1: 18, 18, 18;
+    --spinner-color-2: 35, 35, 35;
+    --spinner-color-3: 0, 255, 255;
+
+    // Header
+
+    --menu-color-1: 18, 18, 18;
+    --menu-color-2: 0, 255, 255;
+    --menu-border: 27, 27, 27;
+    --light-mode-menu-color: 255, 255, 0;
+
+    // Banner
+    --banner-color-1: 0, 0, 0;
+    --banner-color-2: 0, 255, 255;
+    --banner-transparency: .8;
+
+    // About
+    --about-color-1: 18, 18, 18;
+    --about-color-2: 0, 255, 255;
+    --about-color-3: 225, 225, 225;
+    --about-color-4: 0, 255, 255;
+
+    // Projects
+    --projects-color-1: 18, 18, 18;
+    --projects-color-2: 255, 255, 255;
+    --projects-color-3: 0, 255, 255;
+
+    // Contact
+    --contact-color-1: 18, 18, 18;
+    --contact-color-2: 0, 255, 255;
+    --contact-color-3: 225, 225, 225;
+    --contact-color-4: 35, 35, 35;
+    --contact-color-5: 0, 255, 255;
+}
+
+// Conditionally Rendered CSS
+
+.pauseIntroAnimation + .App { // Hide App While Images Load
+    display:none;
+}
+
+.startIntroAnimation { // Hide Loading Spinner When Loading Of Images Are Complete
+    display: none;
+}
+
+.mouseMode *:focus {
+    outline: 0;
+}
+
+.keyboardMode *:focus {
+    outline-color: rgba(var(--outline-color), 1);
+    outline-style: solid;
+    outline-width: 4px;
+    outline-offset: -4px;
+
+    @media screen and (min-width: 481px) {outline-width: 1.7px; outline-offset: -1.7px;}
+    @media screen and (min-width: 721px) {outline-width: 2.5px; outline-offset: -2.5px;}
+    @media screen and (min-width: 961px) {outline-width: 3.4px; outline-offset: -3.4px;}
+    @media screen and (min-width: 1201px) {outline-width: 4.2px; outline-offset: -4.2px;}
+    @media screen and (min-width: 1441px) {outline-width: 5.1px; outline-offset: -5.1px;}
+    @media screen and (min-width: 1681px) {outline-width: 6px; outline-offset: -6px;}
+    @media screen and (min-width: 1921px) {outline-width: 6.75px; outline-offset: -6.75px;}
+    @media screen and (min-width: 2161px) {outline-width: 7.5px; outline-offset: -7.5px;}
+    @media screen and (min-width: 2401px) {outline-width: 8.25px; outline-offset: -8.25px;}
+    @media screen and (min-width: 2641px) {outline-width: 9px; outline-offset: -9px;}
+    @media screen and (min-width: 2881px) {outline-width: 9.75px; outline-offset: -9.75px;}
+    @media screen and (min-width: 3121px) {outline-width: 10.5px; outline-offset: -10.5px;}
+    @media screen and (min-width: 3361px) {outline-width: 11.25px; outline-offset: -11.25px;}
+    @media screen and (min-width: 3601px) {outline-width: 12px; outline-offset: -12px;}
+}

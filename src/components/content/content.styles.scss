@@ -1,0 +1,28 @@
+@keyframes fadeInContent { // Intro Content Fade-In Animations
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.content {
+    order: 0;
+    animation: fadeInContent 1s ease 1.7s both;
+    opacity: 0;
+
+
+    @media screen and (min-width: 961px) and (min-height: 721px)  {
+        grid-column: 2 / 3;
+    }
+}
+
+// Conditionally Rendered CSS
+.bottomMenu {
+    order: -1;
+
+    @media screen and (min-width: 961px) and (min-height: 721px)  {
+        order: 0;
+    }
+}
