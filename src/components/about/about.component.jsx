@@ -26,14 +26,14 @@ const About = ({aboutRef, menuBottom}) => (
       </a>
       <div className="bio-description">
 
-      <p>I'm a Software Developer with fundamental experience in Data Structures & Algorithms, JavaScript, SQL, HTML, CSS and Design Principles.
-      I also use other technologies such as React, TypeScript, Node, PostgreSQL, Git and more.</p>
+      <p>I'm a Software Engineer with professional experience in the MERN stack and React/ASP.NET. I value pushing boundaries of what a website is 
+      supposed to be and I value producing maintainable solutions to enhance the success of businesses and clients.</p>
 
-      <p>A strong aspect of my personality is to solve problems. I like to push boundaries of what a website is 
-      supposed to be and discover unique ways to find solutions. My hospitality and retail experience along with traveling have also 
-      given me plenty of opportunities to understand and work with different types of people.</p>
+      <p>Along with my programming experience, My hospitality and retail experience along with traveling have given me plenty of opportunities to understand and work with different types of people.</p>
 
-      <p>My plans are to enter the industry as a Frontend or Software Developer.</p>
+      <p>Outside of programming I like to engage in amature astronomy and use VSTi istruments to produce sounds and music in FL Studio.</p>
+      
+      <p>Feel free to check out my projects section below to learn more about my professional experience.</p>
 
       </div>
     </div>

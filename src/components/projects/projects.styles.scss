@@ -40,8 +40,9 @@
     .background {
       object-fit: cover;
       object-position: top right;
+      width: 100%; height: 100%;
 
-      @media screen and (min-width: 961px) {position: absolute; width: 100%; height: 100%;}
+      @media screen and (min-width: 961px) {position: absolute;}
     }
     
     .project-info {
