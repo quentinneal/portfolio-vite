@@ -25,9 +25,7 @@ export const projectsList = [{
   title: 'Nuvative',
   technologies: ['JavaScript', 'TypeScript', 'HTML', 'CSS', 'C#', 'React', 'Redux/Redux Toolkit', 'React Router', 'Jest', 'React Testing Library', 'Vitest', 'Sass (SCSS)', 'Material UI', 'NodeJS', 'Express', 'T-SQL', 'PostgreSQL', 'MongoDB', 'ASP.NET', 'REST API', 'User Interface (UI)', 'User Experience (UX)', 'Figma', 'Responsive Design', 'Git', 'GitHub', 'ClickUp', 'Data Structures & Algorithms', 'Design Principles'],
   summary: `<p>I currently work on three projects under the company Nuvative: Net Pay Advance (React/ASP.NET), building the future of online lending; Infange (MERN), the ultimate information exchange platform; and Paydini (React/ASP.NET), a private loan support portal.</p>`,
-  full: `<p>I currently work on three projects under the company Nuvative: Net Pay Advance (React/ASP.NET), building the future of online lending; Infange (MERN), the ultimate information exchange platform; and Paydini (React/ASP.NET), a private loan support portal.</p>
-
-  <p>One of my significant contributions was the overhaul of user profile functionalities. This involved enhancing the processes of data fetching and updating, incorporating more robust validation and error handling mechanisms, and implementing efficient code splitting techniques to optimize application performance.</p>
+  full: `<p>One of my significant contributions was the overhaul of user profile functionalities. This involved enhancing the processes of data fetching and updating, incorporating more robust validation and error handling mechanisms, and implementing efficient code splitting techniques to optimize application performance.</p>
   
   <p>Another area where I made a substantial impact was in the development of an internal employee management feature. This feature streamlined job categorization, department allocation, and employee management processes, eliminating the need for manual interventions in the database.</p>
   
