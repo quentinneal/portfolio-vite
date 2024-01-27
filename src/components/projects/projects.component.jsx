@@ -55,12 +55,16 @@ const Projects = ({projectsRef, menuBottom}) => {
             <div className='summary' dangerouslySetInnerHTML={{__html: summary}} />
             <div className='project-actions' >
               <div className="project-icons">
+              {sources.github && (
                 <a className="icon icon-link" href={sources.github} target="_blank" rel="noopener noreferrer" title="GitHub">
                   <FontAwesomeIcon className="fa-fw" icon={faGithub} />
                 </a>
+                )}
+              {sources.demo && (
                 <a className="icon icon-link" href={sources.demo} target="_blank" rel="noopener noreferrer" title="Live Demo">
                   <FontAwesomeIcon className="fa-fw" icon={faDesktop} />
                 </a>
+                )}
               </div>
               <div className="project-icons">
                 <button className="icon icon-button" tabIndex="0" rel="noopener noreferrer" title={`${readMore ? "Read Less" : "Read More"}`}

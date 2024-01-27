@@ -4,9 +4,50 @@ Use This File To Import Images From image.export.jsx & Create New Project Sectio
 import { northleaflodge320, northleaflodge640, northleaflodge960, northleaflodge1280, northleaflodge1600, northleaflodge1920, northleaflodge2240, northleaflodge2560, northleaflodge2880, northleaflodge3200, northleaflodge3520, northleaflodge3840} from './image.export';
 import { infinity320, infinity640, infinity960, infinity1280, infinity1600, infinity1920, infinity2240, infinity2560, infinity2880, infinity3200, infinity3520, infinity3840} from './image.export';
 import { portfolio320, portfolio640, portfolio960, portfolio1280, portfolio1600, portfolio1920, portfolio2240, portfolio2560, portfolio2880, portfolio3200, portfolio3520, portfolio3840} from './image.export';
-import { crwnClothing320, crwnClothing640, crwnClothing960, crwnClothing1280, crwnClothing1600, crwnClothing1920, crwnClothing2240, crwnClothing2560, crwnClothing2880, crwnClothing3200, crwnClothing3520, crwnClothing3840} from './image.export';
+import { nuvative320, nuvative640, nuvative960, nuvative1280, nuvative1600, nuvative1920, nuvative2240, nuvative2560, nuvative2880, nuvative3200, nuvative3520, nuvative3840} from './image.export';
 
 export const projectsList = [{
+  id: 'nuvative',
+  images: {
+    image1: nuvative320,
+    image2: nuvative640,
+    image3: nuvative960,
+    image4: nuvative1280,
+    image5: nuvative1600,
+    image6: nuvative1920,
+    image7: nuvative2240,
+    image8: nuvative2560,
+    image9: nuvative2880,
+    image10: nuvative3200,
+    image11: nuvative3520,
+    image12: nuvative3840
+  },
+  title: 'Nuvative',
+  technologies: ['JavaScript', 'TypeScript', 'HTML', 'CSS', 'C#', 'React', 'Redux/Redux Toolkit', 'React Router', 'Jest', 'React Testing Library', 'Vitest', 'Sass (SCSS)', 'Material UI', 'NodeJS', 'Express', 'T-SQL', 'PostgreSQL', 'MongoDB', 'ASP.NET', 'REST API', 'User Interface (UI)', 'User Experience (UX)', 'Figma', 'Responsive Design', 'Git', 'GitHub', 'ClickUp', 'Data Structures & Algorithms', 'Design Principles'],
+  summary: `<p>I currently work on three projects under the company Nuvative: Net Pay Advance (React/ASP.NET), building the future of online lending; Infange (MERN), the ultimate information exchange platform; and Paydini (React/ASP.NET), a private loan support portal.</p>`,
+  full: `<p>I currently work on three projects under the company Nuvative: Net Pay Advance (React/ASP.NET), building the future of online lending; Infange (MERN), the ultimate information exchange platform; and Paydini (React/ASP.NET), a private loan support portal.</p>
+
+  <p>One of my significant contributions was the overhaul of user profile functionalities. This involved enhancing the processes of data fetching and updating, incorporating more robust validation and error handling mechanisms, and implementing efficient code splitting techniques to optimize application performance.</p>
+  
+  <p>Another area where I made a substantial impact was in the development of an internal employee management feature. This feature streamlined job categorization, department allocation, and employee management processes, eliminating the need for manual interventions in the database.</p>
+  
+  <p>Security is paramount in any application, and I played a role in enhancing it by implementing penny authorization in a transaction system. This initiative bolstered security within the payment gateway, ensuring safer transaction processes.</p>
+  
+  <p>In addition to backend enhancements, I also worked on improving user experience. For instance, I implemented a pop-up notification feature for pending transactions. This feature was vital in assisting users to make informed decisions regarding their payment plans.</p>
+  
+  <p>Beyond my technical contributions, I was actively involved in mentoring and training other developers. I provided guidance on the software release pipeline and trained developers on the implementation and deployment of hotfixes, which are crucial for maintaining the stability and reliability of software applications.</p>
+  
+  <p>My role also required me to be agile and responsive to urgent needs. I participated in SWAT work sprints, which were dedicated to addressing urgent and high-priority tickets. This aspect of my job ensured that I was not only involved in regular ticket handling but also in providing prompt and efficient resolutions to critical issues as they arose.</p>`,
+  sources: {
+    demo: 'https://nuvative.com/brands/',
+
+  },
+  color: 'default',
+  alt: 'Crown Clothing',
+  direction: 'slide-left-custom',
+  readMore: false
+},
+{
   id: 'Northleaf Lodge',
   images: {
     image1: northleaflodge320,
@@ -101,7 +142,7 @@ export const projectsList = [{
   direction: 'slide-right-custom',
   readMore: false
   },
-  {
+  /*{
     id: 'crwnClothing',
     images: {
       image1: crwnClothing320,
@@ -132,4 +173,4 @@ export const projectsList = [{
     alt: 'Crown Clothing',
     direction: 'slide-left-custom',
     readMore: false
-  }];
+  }*/];

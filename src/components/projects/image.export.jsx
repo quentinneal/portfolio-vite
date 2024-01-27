@@ -3,6 +3,19 @@ Use This File To Export Images For Each Portfolio Project
 Import The Images On The project.export.jsx File
 */
 
+export { default as nuvative320 } from '../../assets/nuvative1920.jpg';
+export { default as nuvative640 } from '../../assets/nuvative1920.jpg';
+export { default as nuvative960 } from '../../assets/nuvative1920.jpg';
+export { default as nuvative1280 } from '../../assets/nuvative1920.jpg';
+export { default as nuvative1600 } from '../../assets/nuvative1920.jpg';
+export { default as nuvative1920 } from '../../assets/nuvative1920.jpg';
+export { default as nuvative2240 } from '../../assets/nuvative2240.jpg';
+export { default as nuvative2560 } from '../../assets/nuvative2560.jpg';
+export { default as nuvative2880 } from '../../assets/nuvative2880.jpg';
+export { default as nuvative3200 } from '../../assets/nuvative3200.jpg';
+export { default as nuvative3520 } from '../../assets/nuvative3520.jpg';
+export { default as nuvative3840 } from '../../assets/nuvative3840.jpg';
+
 export { default as northleaflodge320 } from '../../assets/northleaflodge320.jpg';
 export { default as northleaflodge640 } from '../../assets/northleaflodge640.jpg';
 export { default as northleaflodge960 } from '../../assets/northleaflodge960.jpg';
